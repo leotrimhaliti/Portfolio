@@ -1,35 +1,9 @@
 {
   "projects": [
     {
-      "name": "Text Speed Racer",
-      "description": "race your friends or randoms to see who types fastest.",
-      "image": "/text-speed-racer.png",
-      "tags": ["TypeScript", "React", "Vite", "WebSocket"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/text-speed-racer",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "CS2 Crosshair Demo Extractor",
-      "description": "extract crosshairs from CS2 demos — load, grab, play.",
-      "image": "/cs2-crosshair-extractor.png",
-      "tags": ["Node.js", "Electron", "CS2", "File Parsing"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/cs2-crosshair-extractor",
-          "icon": "github"
-        }
-      ]
-    },
-    {
       "name": "Real-Time Bus Tracking App",
       "description": "mobile app showing real-time positions of faculty buses with routes and live updates.",
-      "image": "/bus-tracker.png",
+      "image": "/logobus.png",
       "tags": ["React Native", "Supabase", "Maps", "Real-Time"],
       "links": [
         {
@@ -40,10 +14,36 @@
       ]
     },
     {
+      "name": "FACEITData",
+      "description": "View your stats instantly for FACEIT matches in CS2.",
+      "image": "/FACEITData.png",
+      "tags": ["React Native", "Expo Go", "TypeScript"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/FACEITData",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "KodoBashke",
+      "description": "Find project partners and collaborate on projects with them.",
+      "image": "/KodoBashke.png",
+      "tags": ["React Native", "Supabase", "Real-Time"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/KodoBashke",
+          "icon": "github"
+        }
+      ]
+    },
+    {
       "name": "Barber Booking Website",
-      "description": "online booking system for a local barbershop with admin dashboard and notifications.",
-      "image": "/barber-booking.png",
-      "tags": ["React", "Node.js", "Express", "PostgreSQL"],
+      "description": "Online booking system for a local barbershop with admin dashboard.",
+      "image": "/viki.jpg",
+      "tags": ["React","Supabase", "TypeScript"],
       "links": [
         {
           "name": "Website",
@@ -53,14 +53,14 @@
       ]
     },
     {
-      "name": "Google Translate Clone",
-      "description": "simple clone of Google Translate to practice language detection and translation UI.",
-      "image": "/translate-clone.png",
-      "tags": ["React", "Fetch API", "i18n"],
+      "name": "Text Speed Racer",
+      "description": "Race anyone to see who types the fastest.",
+      "image": "/fasttext.jpg",
+      "tags": ["TypeScript", "React", "Vite", "WebSocket"],
       "links": [
         {
           "name": "Source",
-          "href": "https://github.com/leotrimhaliti/google-translate-clone",
+          "href": "https://github.com/leotrimhaliti/text-speed-racer",
           "icon": "github"
         }
       ]

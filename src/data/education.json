@@ -30,18 +30,6 @@
         "Currently pursuing a degree in Software Engineering",
         "Focused on Full-Stack Development",
         "Active in academic and personal projects related to web and mobile applications"
-      ],
-      "links": [
-        {
-          "name": "Text Speed Racer",
-          "href": "https://github.com/leotrimhaliti/text-speed-racer",
-          "icon": "github"
-        },
-        {
-          "name": "🚌 Real-Time Bus Tracking App",
-          "href": "https://github.com/leotrimhaliti/ai-mobile-leotrimhaliti",
-          "icon": "github"
-        }
       ]
     }
   ]
