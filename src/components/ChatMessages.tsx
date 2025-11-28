@@ -40,7 +40,7 @@ export default function ChatMessages({
           <Bot />
           <p className="font-medium">Chat under development 🚧</p>
           <p className="text-center text-xs text-muted-foreground">
-            I'm currently working on this feature. Check back soon!
+            I&apos;m currently working on this feature. Check back soon!
           </p>
         </div>
       )}

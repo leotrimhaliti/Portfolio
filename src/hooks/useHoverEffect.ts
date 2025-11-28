@@ -32,10 +32,13 @@ export const useHoverEffect = (
         // Only run on client side
         if (typeof window === "undefined" || !containerRef.current) return;
 
+        // Capture ref value for cleanup
+        const container = containerRef.current;
+
         try {
             // Initialize the hover effect with performance-optimized settings
             effectRef.current = new hoverEffect({
-                parent: containerRef.current,
+                parent: container,
                 intensity: 0.3, // Reduced for better performance
                 speedIn: 1.2, // Slightly faster for snappier feel
                 speedOut: 1.0,
@@ -48,9 +51,9 @@ export const useHoverEffect = (
 
         // Cleanup function
         return () => {
-            if (effectRef.current && containerRef.current) {
+            if (effectRef.current && container) {
                 // Clean up WebGL resources
-                const canvas = containerRef.current.querySelector("canvas");
+                const canvas = container.querySelector("canvas");
                 if (canvas) {
                     const gl = canvas.getContext("webgl") || canvas.getContext("webgl2");
                     if (gl) {
