@@ -24,13 +24,12 @@ export function ProjectCard({ project }: Props) {
       <CardHeader>
         {image && (
           <Link href={href || image}>
-            <div className="flex h-40 w-full items-center justify-center rounded-lg bg-muted">
+            <div className="relative h-40 w-full overflow-hidden rounded-lg bg-muted/50">
               <Image
                 src={image}
                 alt={name}
-                width={500}
-                height={300}
-                className="max-h-full max-w-full object-contain"
+                fill
+                className="object-contain p-4"
               />
             </div>
           </Link>

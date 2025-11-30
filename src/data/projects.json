@@ -1,6 +1,34 @@
 {
+  
   "projects": [
     {
+      "name": "Go+",
+      "description": "Modern landing page for the Go+ brand.",
+      "image": "/goplus.jpg",
+      "tags": ["Next.js","GSAP","TypeScript", "Three.js"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/Goplus",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Kommits",
+      "description": "Never stare at git commit -m \"\" again.",
+      "image": "/kommits.jpg",
+      "tags": ["Next.js","Tailwind CSS","TypeScript"],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/Kommits",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+
       "name": "Real-Time Bus Tracking App",
       "description": "mobile app showing real-time positions of faculty buses with routes and live updates.",
       "image": "/logobus.png",
@@ -48,19 +76,6 @@
         {
           "name": "Website",
           "href": "https://github.com/leotrimhaliti/barber-reservation",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "Text Speed Racer",
-      "description": "Race anyone to see who types the fastest.",
-      "image": "/fasttext.jpg",
-      "tags": ["TypeScript", "React", "Vite", "WebSocket"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/text-speed-racer",
           "icon": "github"
         }
       ]
