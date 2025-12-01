@@ -30,6 +30,7 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
     intensity: 0.3, // Optimized for performance
     speedIn: 1.2,
     speedOut: 1.0,
+    imagesRatio: 233 / 175, // Match container aspect ratio (height/width)
   });
 
   // Ensure canvas fills container properly

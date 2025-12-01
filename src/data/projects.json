@@ -31,7 +31,7 @@
 
       "name": "Real-Time Bus Tracking App",
       "description": "mobile app showing real-time positions of faculty buses with routes and live updates.",
-      "image": "/logobus.png",
+      "image": "/logobus.jpg",
       "tags": ["React Native", "Supabase", "Maps", "Real-Time"],
       "links": [
         {
