@@ -1,5 +1,4 @@
 import Groq from "groq-sdk";
-import { OpenAIStream, StreamingTextResponse } from "ai";
 
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY,
@@ -19,6 +18,24 @@ export async function POST(req: Request) {
         stream: true,
     });
 
-    const stream = OpenAIStream(response as any);
-    return new StreamingTextResponse(stream);
+    // Create a readable stream from the Groq response
+    const encoder = new TextEncoder();
+    const stream = new ReadableStream({
+        async start(controller) {
+            for await (const chunk of response) {
+                const text = chunk.choices[0]?.delta?.content || "";
+                if (text) {
+                    // Format as data stream protocol for useChat
+                    controller.enqueue(encoder.encode(`0:${JSON.stringify(text)}\n`));
+                }
+            }
+            controller.close();
+        },
+    });
+
+    return new Response(stream, {
+        headers: {
+            "Content-Type": "text/plain; charset=utf-8",
+        },
+    });
 }
