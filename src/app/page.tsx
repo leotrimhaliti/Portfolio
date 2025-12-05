@@ -47,12 +47,12 @@ export default async function Home() {
           </div>
 
           <section className="mt-6 flex flex-wrap items-center gap-4">
-            <Link href="https://leotrimhaliti.is-a.dev/" target="_blank">
+            <a href="/resume.pdf" download="resume.pdf">
               <Button variant="outline">
                 <span className="font-semibold">Resume</span>
                 <FileDown className="ml-2 size-5" />
               </Button>
-            </Link>
+            </a>
             <Socials />
           </section>
         </div>
