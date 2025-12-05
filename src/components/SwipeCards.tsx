@@ -30,7 +30,7 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
     intensity: 0.3, // Optimized for performance
     speedIn: 1.2,
     speedOut: 1.0,
-    imagesRatio: 233 / 175, // Match container aspect ratio (height/width)
+    imagesRatio: 1, // Square aspect ratio (1:1)
   });
 
   // Ensure canvas fills container properly
@@ -55,7 +55,7 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
     return (
       <div
         className={cn(
-          "relative h-[233px] w-[175px] overflow-hidden rounded-lg shadow-lg",
+          "relative h-[200px] w-[200px] overflow-hidden rounded-lg shadow-lg",
           className
         )}
         onMouseEnter={() => setIsHovered(true)}
@@ -78,7 +78,7 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
     return (
       <div
         className={cn(
-          "relative h-[233px] w-[175px] overflow-hidden rounded-lg shadow-lg",
+          "relative h-[200px] w-[200px] overflow-hidden rounded-lg shadow-lg",
           className
         )}
       >
@@ -99,7 +99,7 @@ const SwipeCards = ({ className }: SwipeCardsProps) => {
     <div
       ref={containerRef}
       className={cn(
-        "relative h-[233px] w-[175px] overflow-hidden rounded-lg shadow-lg",
+        "relative h-[200px] w-[200px] overflow-hidden rounded-lg shadow-lg",
         className
       )}
       style={{
