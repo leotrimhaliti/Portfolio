@@ -1,38 +1,15 @@
 {
-  
   "projects": [
     {
-      "name": "Go+",
-      "description": "Modern landing page for the Go+ brand.",
-      "image": "/goplus.jpg",
-      "tags": ["Next.js","GSAP","TypeScript", "Three.js"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/Goplus",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "Kommits",
-      "description": "Never stare at git commit -m \"\" again.",
-      "image": "/kommits.jpg",
-      "tags": ["Next.js","Tailwind CSS","TypeScript"],
-      "links": [
-        {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/Kommits",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-
-      "name": "Real-Time Bus Tracking App",
+      "name": "AAB Bus",
       "description": "Mobile app showing real-time positions of faculty buses with routes and live updates.",
       "image": "/logobus.jpg",
-      "tags": ["React Native", "Supabase", "Maps", "Real-Time"],
+      "tags": [
+        "React Native",
+        "Supabase",
+        "Maps",
+        "Real-Time"
+      ],
       "links": [
         {
           "name": "Source",
@@ -42,10 +19,66 @@
       ]
     },
     {
+      "name": "Go+",
+      "description": "Modern landing page for the Go+ brand.",
+      "image": "/goplus.jpg",
+      "tags": [
+        "Next.js",
+        "GSAP",
+        "TypeScript",
+        "Three.js"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/Goplus",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "GeoShqip",
+      "description": "Game restricted to Kosovo + Albania.",
+      "image": "/geoshqip.jpg",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "Maps"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/GeoShqip",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "Kommits",
+      "description": "Never stare at git commit -m \"\" again.",
+      "image": "/kommits.jpg",
+      "tags": [
+        "Next.js",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/Kommits",
+          "icon": "github"
+        }
+      ]
+    },
+    {
       "name": "FACEITData",
       "description": "View your stats instantly for FACEIT matches in CS2.",
       "image": "/FACEITData.png",
-      "tags": ["React Native", "Expo Go", "TypeScript"],
+      "tags": [
+        "React Native",
+        "Expo Go",
+        "TypeScript"
+      ],
       "links": [
         {
           "name": "Source",
@@ -58,7 +91,11 @@
       "name": "KodoBashke",
       "description": "Find project partners and collaborate on projects with them.",
       "image": "/KodoBashke.png",
-      "tags": ["React Native", "Supabase", "Real-Time"],
+      "tags": [
+        "React Native",
+        "Supabase",
+        "Real-Time"
+      ],
       "links": [
         {
           "name": "Source",
@@ -71,7 +108,11 @@
       "name": "Barber Booking Website",
       "description": "Online booking system for a local barbershop with admin dashboard.",
       "image": "/viki.jpg",
-      "tags": ["React","Supabase", "TypeScript"],
+      "tags": [
+        "React",
+        "Supabase",
+        "TypeScript"
+      ],
       "links": [
         {
           "name": "Website",
