@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "name": "MonitorimiDuhanit",
+      "description": "Monitoring the promotion of tobacco, vapes and nicotine in the digital space of Kosovo.",
+      "image": "/monitorimiduhanit.png",
+      "tags": [
+        "Next.js",
+        "Real-Time",
+        "Dashboard",
+        "Monitoring"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://monitorimiduhanit.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "AAB Bus",
       "description": "Mobile app showing real-time positions of faculty buses with routes and live updates.",
       "image": "/logobus.jpg",
@@ -12,9 +30,9 @@
       ],
       "links": [
         {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/ai-mobile-leotrimhaliti",
-          "icon": "github"
+          "name": "Website",
+          "href": "https://aabbus.netlify.app/",
+          "icon": "globe"
         }
       ]
     },
@@ -30,8 +48,35 @@
       ],
       "links": [
         {
+          "name": "Website",
+          "href": "https://goplusenergy.netlify.app/",
+          "icon": "globe"
+        },
+        {
           "name": "Source",
           "href": "https://github.com/leotrimhaliti/Goplus",
+          "icon": "github"
+        }
+      ]
+    },
+    {
+      "name": "FACEITData",
+      "description": "View your stats instantly for FACEIT matches in CS2.",
+      "image": "/FACEITData.png",
+      "tags": [
+        "React Native",
+        "Expo Go",
+        "TypeScript"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://faceitdata.netlify.app/",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
+          "href": "https://github.com/leotrimhaliti/FACEITData",
           "icon": "github"
         }
       ]
@@ -46,6 +91,11 @@
         "Maps"
       ],
       "links": [
+        {
+          "name": "Website",
+          "href": "https://geoshqip.netlify.app/",
+          "icon": "globe"
+        },
         {
           "name": "Source",
           "href": "https://github.com/leotrimhaliti/GeoShqip",
@@ -64,25 +114,13 @@
       ],
       "links": [
         {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/Kommits",
-          "icon": "github"
-        }
-      ]
-    },
-    {
-      "name": "FACEITData",
-      "description": "View your stats instantly for FACEIT matches in CS2.",
-      "image": "/FACEITData.png",
-      "tags": [
-        "React Native",
-        "Expo Go",
-        "TypeScript"
-      ],
-      "links": [
+          "name": "Website",
+          "href": "https://kommits.netlify.app/",
+          "icon": "globe"
+        },
         {
           "name": "Source",
-          "href": "https://github.com/leotrimhaliti/FACEITData",
+          "href": "https://github.com/leotrimhaliti/Kommits",
           "icon": "github"
         }
       ]
@@ -116,6 +154,11 @@
       "links": [
         {
           "name": "Website",
+          "href": "https://vikibarber.netlify.app/",
+          "icon": "globe"
+        },
+        {
+          "name": "Source",
           "href": "https://github.com/leotrimhaliti/barber-reservation",
           "icon": "github"
         }

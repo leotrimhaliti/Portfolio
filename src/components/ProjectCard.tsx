@@ -19,21 +19,38 @@ interface Props {
 export function ProjectCard({ project }: Props) {
   const { name, href, description, image, tags, links } = project;
 
+  // Get the best link for the image: website first, then GitHub, return null if no valid link
+  const getImageLink = (): string | null => {
+    if (!links || links.length === 0) return null;
+    // Look for a non-GitHub link (website) first
+    const websiteLink = links.find((link) => !link.href.includes("github.com"));
+    if (websiteLink) return websiteLink.href;
+    // Don't make it clickable if it's only GitHub (repo might be private)
+    return null;
+  };
+
+  const imageLink = getImageLink();
+
   return (
     <Card className="flex flex-col overflow-hidden">
       <CardHeader className="p-0">
-        {image && (
-          <Link href={href || image}>
+        {image &&
+          (imageLink ? (
+            <Link href={imageLink} target="_blank" rel="noopener noreferrer">
+              <div className="group relative aspect-video w-full overflow-hidden bg-zinc-900">
+                <Image
+                  src={image}
+                  alt={name}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </Link>
+          ) : (
             <div className="group relative aspect-video w-full overflow-hidden bg-zinc-900">
-              <Image
-                src={image}
-                alt={name}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
+              <Image src={image} alt={name} fill className="object-cover" />
             </div>
-          </Link>
-        )}
+          ))}
       </CardHeader>
       <CardContent className="flex flex-col gap-2 pt-4">
         <CardTitle>{name}</CardTitle>
