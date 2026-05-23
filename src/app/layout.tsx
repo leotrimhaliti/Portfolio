@@ -18,8 +18,49 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "leotrimhaliti",
-  description: "My personal site to showcase my developer work and opinions.",
+  title: "Leotrim Haliti | Software Engineer",
+  description:
+    "Personal portfolio of Leotrim Haliti, a software engineer from Kosovo. Projects, blog posts, and contact.",
+  keywords: [
+    "Leotrim Haliti",
+    "leotrimhaliti",
+    "leotrim.info",
+    "leotrimhaliti.me",
+    "leotrimhaliti.com",
+    "Leotrim",
+    "Haliti",
+    "software engineer Kosovo",
+    "full stack developer Kosovo",
+    "Next.js developer",
+    "React developer",
+  ],
+  authors: [{ name: "Leotrim Haliti", url: "https://leotrim.info" }],
+  creator: "Leotrim Haliti",
+  metadataBase: new URL("https://leotrim.info"),
+  alternates: {
+    canonical: "https://leotrim.info",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://leotrim.info",
+    title: "Leotrim Haliti | Software Engineer",
+    description:
+      "Personal portfolio of Leotrim Haliti, a software engineer from Kosovo. Projects, blog posts, and contact.",
+    siteName: "Leotrim Haliti",
+    images: [{ url: "/newavatar.png", width: 1200, height: 630, alt: "Leotrim Haliti" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Leotrim Haliti | Software Engineer",
+    description:
+      "Personal portfolio of Leotrim Haliti, a software engineer from Kosovo.",
+    images: ["/newavatar.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({

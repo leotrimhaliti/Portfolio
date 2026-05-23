@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "name": "Dreshaj Elite Cars",
+      "description": "Browse used cars imported from Korea. Listings update automatically every few hours.",
+      "image": "/dreshajelitecars.jpg",
+      "tags": [
+        "Next.js",
+        "Supabase",
+        "TypeScript",
+        "Node.js"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://dreshajelitecars.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "MonitorimiDuhanit",
       "description": "Monitoring the promotion of tobacco, vapes and nicotine in the digital space of Kosovo.",
       "image": "/monitorimiduhanit.png",
@@ -71,7 +89,7 @@
       "links": [
         {
           "name": "Website",
-          "href": "https://faceitdata.netlify.app/",
+          "href": "https://faceitdata.com/",
           "icon": "globe"
         },
         {

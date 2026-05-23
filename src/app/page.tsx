@@ -22,8 +22,29 @@ const LIMIT = 2; // max show 2
 export default async function Home() {
   const posts = await getPosts(blogDirectory, LIMIT);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Leotrim Haliti",
+    alternateName: ["leotrimhaliti", "Leotrim"],
+    url: "https://leotrim.info",
+    sameAs: [
+      "https://leotrimhaliti.me",
+      "https://leotrimhaliti.com",
+      "https://leotrim.info",
+      "https://github.com/leotrimhaliti",
+    ],
+    jobTitle: "Software Engineer",
+    description: "Software engineer from Kosovo. Full-stack developer working with Next.js, React, and Supabase.",
+    image: "https://leotrim.info/newavatar.png",
+  };
+
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
         <SwipeCards className="md:mr-8" />
 

@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground">
             &copy; {new Date().getFullYear()}{" "}
             <Link className="link" href="/">
-              leotrimhaliti.is-a.dev
+              leotrim.info
             </Link>{" "}
             |{" "}
             <Link className="link font-bold" href="/privacy">
