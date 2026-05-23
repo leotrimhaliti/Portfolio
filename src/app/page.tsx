@@ -16,8 +16,17 @@ import Link from "next/link";
 import path from "path";
 
 const blogDirectory = path.join(process.cwd(), "content");
-const LEO_BIRTH_YEAR = 2003;
+const LEO_BIRTHDAY = new Date(2003, 9, 1); // Oct 1, 2003 (month is 0-indexed)
 const LIMIT = 2; // max show 2
+function getAge(birthday: Date): number {
+  const today = new Date();
+  let age = today.getFullYear() - birthday.getFullYear();
+  const hasHadBirthdayThisYear =
+    today.getMonth() > birthday.getMonth() ||
+    (today.getMonth() === birthday.getMonth() && today.getDate() >= birthday.getDate());
+  if (!hasHadBirthdayThisYear) age--;
+  return age;
+}
 
 export default async function Home() {
   const posts = await getPosts(blogDirectory, LIMIT);
@@ -54,7 +63,7 @@ export default async function Home() {
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            {new Date().getFullYear() - LEO_BIRTH_YEAR}
+            {getAge(LEO_BIRTHDAY)}
             yo software engineer from Kosovo
           </p>
 
