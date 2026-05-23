@@ -1,11 +1,31 @@
 {
   "career": [
     {
+      "name": "Dreshaj Elite Cars",
+      "href": "https://dreshajelitecars.com",
+      "title": "Freelance Fullstack Developer",
+      "logo": "/dreshajelitecars.jpg",
+      "start": "Apr 2026",
+      "end": "May 2026",
+      "description": [
+        "Built a car listing platform for Korean imports",
+        "Next.js frontend, Supabase backend, automated scraper syncing inventory from Encar.com"
+      ],
+      "links": [
+        {
+          "name": "Website",
+          "href": "https://dreshajelitecars.com",
+          "icon": "globe"
+        }
+      ]
+    },
+    {
       "name": "QKUK (Main University Clinical Center of Kosovo)",
       "href": "https://shskuk.org",
       "title": "Software Developer (Patient Management System)",
       "logo": "/qkuk.png",
       "start": "Jun 2025",
+      "end": "Jan 2026",
       "description": [
         "Developing a Patient Management System for QKUK",
         "React (Vite), Node.js"
@@ -17,6 +37,7 @@
       "title": "Freelance Fullstack Developer",
       "logo": "/viki.jpg",
       "start": "Sep 2025",
+      "end": "Feb 2026",
       "description": [
         "Online booking system for a barbershop",
         "React (Vite), Supabase"

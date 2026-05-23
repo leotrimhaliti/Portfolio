@@ -1,6 +1,30 @@
 {
   "education": [
     {
+      "name": "KO-in-EU Project (Erasmus+)",
+      "href": "https://leotrim.info/blog/ko-in-eu-hackathon",
+      "title": "Assistant Tech — EU Integration Hackathon",
+      "logo": "/hackathon.jpg",
+      "start": "May 2026",
+      "end": "May 2026",
+      "description": [
+        "Assisted as tech support during a 3-day hackathon co-funded by Erasmus+",
+        "Mixed teams of CS and Public Administration students built web solutions on Kosovo's EU integration"
+      ],
+      "links": [
+        {
+          "name": "Certificate",
+          "href": "https://leotrim.info/hackathon-qertifikat.png",
+          "icon": "award"
+        },
+        {
+          "name": "Blog Post",
+          "href": "https://leotrim.info/blog/ko-in-eu-hackathon",
+          "icon": "newspaper"
+        }
+      ]
+    },
+    {
       "name": "Kolegji AAB",
       "href": "https://aab-edu.net",
       "title": "Full Stack Web Application (Angular)",

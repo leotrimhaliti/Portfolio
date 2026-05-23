@@ -19,11 +19,11 @@ export default function TimelineItem({ experience }: Props) {
         target="_blank"
         className="absolute -left-16 top-4 flex items-center justify-center rounded-full"
       >
-        <Avatar className="size-12 border bg-white">
+        <Avatar className="size-12 border">
           <AvatarImage
             src={logo}
             alt={name}
-            className="bg-white object-contain"
+            className="object-cover"
           />
           <AvatarFallback>{name[0]}</AvatarFallback>
         </Avatar>
