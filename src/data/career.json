@@ -1,6 +1,20 @@
 {
   "career": [
     {
+      "name": "Prishtina International Airport - Adem Jashari",
+      "href": "https://www.airportpristina.com",
+      "title": "Information Technology Technician",
+      "logo": "/airport-logo.png",
+      "start": "Jul 2026",
+      "employmentType": "Full-time",
+      "location": "Prishtine · On-site",
+      "description": [
+        "Provide technical support to ensure the reliable operation of the airport's IT infrastructure",
+        "Troubleshoot hardware, software, and network issues, and install and configure computer systems",
+        "Maintain IT equipment, support end users, and assist with system maintenance for secure and efficient daily operations"
+      ]
+    },
+    {
       "name": "Dreshaj Elite Cars",
       "href": "https://dreshajelitecars.com",
       "title": "Freelance Fullstack Developer",
