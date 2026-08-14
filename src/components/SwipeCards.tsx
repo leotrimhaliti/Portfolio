@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useHoverEffect } from "@/hooks/useHoverEffect";
@@ -9,29 +9,44 @@ interface SwipeCardsProps {
   className?: string;
 }
 
-const SwipeCards = ({ className }: SwipeCardsProps) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [hasWebGL, setHasWebGL] = useState<boolean | null>(null);
-  const [isHovered, setIsHovered] = useState(false);
+const emptySubscribe = () => () => {};
 
-  // Check for WebGL support
-  useEffect(() => {
+let webGLSupport: boolean | null = null;
+function detectWebGL(): boolean | null {
+  if (webGLSupport === null) {
     const canvas = document.createElement("canvas");
     const gl =
       canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-    setHasWebGL(!!gl);
-  }, []);
+    webGLSupport = !!gl;
+  }
+  return webGLSupport;
+}
+
+const SwipeCards = ({ className }: SwipeCardsProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const hoverOptions = useMemo(
+    () => ({
+      image1: "/avatar1.png",
+      image2: "/newavatar.png",
+      displacementImage: "/displacement.png",
+      intensity: 0.3,
+      speedIn: 1.2,
+      speedOut: 1.0,
+      imagesRatio: 1,
+    }),
+    [],
+  );
+
+  // Check for WebGL support (null during SSR)
+  const hasWebGL = useSyncExternalStore(
+    emptySubscribe,
+    detectWebGL,
+    () => null,
+  );
 
   // Only initialize hover effect if WebGL is supported
-  useHoverEffect(hasWebGL ? containerRef : { current: null }, {
-    image1: "/avatar1.png",
-    image2: "/newavatar.png",
-    displacementImage: "/displacement.png",
-    intensity: 0.3, // Optimized for performance
-    speedIn: 1.2,
-    speedOut: 1.0,
-    imagesRatio: 1, // Square aspect ratio (1:1)
-  });
+  useHoverEffect(hasWebGL ? containerRef : { current: null }, hoverOptions);
 
   // Ensure canvas fills container properly
   useEffect(() => {

@@ -5,6 +5,7 @@ import { ThemeProvider, useTheme } from "next-themes";
 import React from "react";
 import { Toaster } from "sonner";
 import Chat from "./Chat";
+import CookieConsent from "./CookieConsent";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -17,6 +18,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       <ChatProvider>
         {children}
         <Chat />
+        <CookieConsent />
       </ChatProvider>
       <ToastProvider />
     </ThemeProvider>

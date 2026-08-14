@@ -23,7 +23,7 @@ export interface HoverEffectOptions {
  * Optimized for performance on lower-end devices
  */
 export const useHoverEffect = (
-    containerRef: React.RefObject<HTMLDivElement>,
+    containerRef: React.RefObject<HTMLDivElement | null>,
     options: HoverEffectOptions
 ) => {
     const effectRef = useRef<any>(null);
@@ -49,19 +49,10 @@ export const useHoverEffect = (
             console.error("Failed to initialize hover effect:", error);
         }
 
-        // Cleanup function
         return () => {
             if (effectRef.current && container) {
-                // Clean up WebGL resources
                 const canvas = container.querySelector("canvas");
                 if (canvas) {
-                    const gl = canvas.getContext("webgl") || canvas.getContext("webgl2");
-                    if (gl) {
-                        const loseContext = gl.getExtension("WEBGL_lose_context");
-                        if (loseContext) {
-                            loseContext.loseContext();
-                        }
-                    }
                     canvas.remove();
                 }
                 effectRef.current = null;

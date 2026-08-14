@@ -1,4 +1,4 @@
-import { ChatRequestOptions, Message } from "ai";
+import { Message } from "@/hooks/useChat";
 import { SendHorizontal, Trash } from "lucide-react";
 import { HTMLAttributes } from "react";
 import { Button } from "./ui/Button";
@@ -6,12 +6,7 @@ import { Input } from "./ui/Input";
 
 interface ChatInputProps extends HTMLAttributes<HTMLFormElement> {
   input: string;
-  handleSubmit: (
-    event?: {
-      preventDefault?: () => void;
-    },
-    chatRequestOptions?: ChatRequestOptions,
-  ) => void;
+  handleSubmit: (event?: { preventDefault?: () => void }) => void;
   handleInputChange: (
     e:
       | React.ChangeEvent<HTMLInputElement>

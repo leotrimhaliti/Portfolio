@@ -1,4 +1,4 @@
-import { Message } from "ai";
+import { Message } from "@/hooks/useChat";
 import { Bot, Loader2 } from "lucide-react";
 import { useEffect, useRef } from "react";
 import ChatMessage from "./ChatMessage";

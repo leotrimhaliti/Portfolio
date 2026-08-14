@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const lastUpdated = "Oct 2025";
+const lastUpdated = "Aug 2026";
 
 export default function page() {
   return (
@@ -20,8 +20,7 @@ export default function page() {
         <p>
           Honestly, this is just a static portfolio site, so I don&apos;t
           actively collect any personal information. There&apos;s no account
-          creation, no tracking cookies, and definitely no sneaky data
-          gathering.
+          creation, no ad tracking, and definitely no sneaky data gathering.
         </p>
         <h3>1. Chatbot Conversations</h3>
         <p>
@@ -34,6 +33,12 @@ export default function page() {
           If you reach out via email or the contact form, the info you provide
           is entirely up to you. I&apos;ll only use it to reply and have a
           conversation with you-no funny business.
+        </p>
+        <h3>3. Cookie Preference</h3>
+        <p>
+          The site stores one small preference cookie so it remembers whether
+          you accepted cookies or chose essential-only mode. It is not used for
+          advertising or tracking.
         </p>
         <h2 className="title">How I Use the Info</h2>
         <p>Here&apos;s what I might do with any information I collect:</p>

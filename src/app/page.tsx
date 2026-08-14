@@ -43,8 +43,9 @@ export default async function Home() {
       "https://leotrim.info",
       "https://github.com/leotrimhaliti",
     ],
-    jobTitle: "Software Engineer",
-    description: "Software engineer from Kosovo. Full-stack developer working with Next.js, React, and Supabase.",
+    jobTitle: "Full-Stack Developer",
+    description:
+      "Full-stack developer from Kosovo building practical web and mobile products for real clients, from business tools to data-driven apps.",
     image: "https://leotrim.info/newavatar.png",
   };
 
@@ -62,13 +63,14 @@ export default async function Home() {
             hi, i’m leotrim.
           </h1>
 
-          <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
+          <p className="mt-2 text-sm font-medium sm:text-base">
+            full-stack developer from Kosovo,{" "}
             {getAge(LEO_BIRTHDAY)}
-            yo software engineer from Kosovo
           </p>
 
           <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-            backend is the foundation, full-stack is the fun part.
+            I build practical web and mobile products for real clients, turning
+            messy business problems into clean, usable software.
           </p>
 
           <div className="mt-6 flex items-center gap-1">

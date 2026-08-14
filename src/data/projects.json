@@ -2,17 +2,16 @@
   "projects": [
     {
       "name": "Dreshaj Elite Cars",
-      "description": "Browse used cars imported from Korea. Listings update automatically every few hours.",
+      "description": "**Brief:** The client wanted a professional website for Korean import cars with live inventory.\n\n**What I built:** A car listing platform that automatically syncs vehicles, photos, prices, and details from Encar.com.\n\n**Result:** The dealership can show fresh inventory online without updating every listing by hand.",
       "image": "/dreshajelitecars.jpg",
       "tags": [
         "Next.js",
         "Supabase",
-        "TypeScript",
-        "Node.js"
+        "Automation"
       ],
       "links": [
         {
-          "name": "Website",
+          "name": "DreshajEliteCars",
           "href": "https://dreshajelitecars.com",
           "icon": "globe"
         }
@@ -20,17 +19,18 @@
     },
     {
       "name": "MonitorimiDuhanit",
-      "description": "Monitoring the promotion of tobacco, vapes and nicotine in the digital space of Kosovo.",
+      "description": "**Problem:** Tobacco and vape promotions online were hard to track consistently across Kosovo.\n\n**What I built:** A monitoring platform that gathers online content, uses AI to flag relevant posts, and shows trends in a dashboard.\n\n**Result:** Researchers can review patterns, export findings, and spend less time checking sources manually.",
       "image": "/monitorimiduhanit.jpg",
       "tags": [
         "Next.js",
-        "Real-Time",
+        "Supabase",
+        "AI Detection",
         "Dashboard",
-        "Monitoring"
+        "Data Export"
       ],
       "links": [
         {
-          "name": "Website",
+          "name": "MonitorimiDuhanit",
           "href": "https://monitorimiduhanit.com",
           "icon": "globe"
         }
@@ -38,25 +38,21 @@
     },
     {
       "name": "AAB Bus",
-      "description": "Mobile app showing real-time positions of faculty buses with routes and live updates.",
+      "description": "**Problem:** Students and staff needed a clearer way to follow university buses in real time.\n\n**What I built:** A mobile app that connects to AAB's existing systems for live bus locations, routes, schedules, and profiles.\n\n**Result:** Users can check bus movement and departure details directly from their phone without the app storing their data.",
       "image": "/logobus.jpg",
       "tags": [
         "React Native",
-        "Supabase",
+        "Expo",
+        "AAB API",
+        "Live Tracking",
         "Maps",
-        "Real-Time"
+        "Offline Support"
       ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://aabbus.netlify.app/",
-          "icon": "globe"
-        }
-      ]
+      "links": []
     },
     {
       "name": "Go+",
-      "description": "Modern landing page for the Go+ brand.",
+      "description": "**Problem:** The Go+ brand needed a product page that felt more polished and memorable.\n\n**What I built:** An animated landing page with scroll effects and interactive product visuals.\n\n**Result:** The brand gets a sharper first impression and a page that feels more premium.",
       "image": "/goplus.jpg",
       "tags": [
         "Next.js",
@@ -66,7 +62,7 @@
       ],
       "links": [
         {
-          "name": "Website",
+          "name": "Go+",
           "href": "https://goplusenergy.netlify.app/",
           "icon": "globe"
         },
@@ -79,16 +75,18 @@
     },
     {
       "name": "FACEITData",
-      "description": "View your stats instantly for FACEIT matches in CS2.",
+      "description": "**Problem:** CS2 players wanted a faster way to check FACEIT stats and recent match performance.\n\n**What I built:** A cross-platform app with player search, match history, favorites, and shareable stat cards.\n\n**Result:** Players can review and share performance from one focused app on web or mobile.",
       "image": "/FACEITData.png",
       "tags": [
+        "React",
         "React Native",
-        "Expo Go",
-        "TypeScript"
+        "Expo",
+        "TypeScript",
+        "FACEIT API"
       ],
       "links": [
         {
-          "name": "Website",
+          "name": "FACEITData",
           "href": "https://faceitdata.com/",
           "icon": "globe"
         },
@@ -100,30 +98,31 @@
       ]
     },
     {
-      "name": "GeoShqip",
-      "description": "Game restricted to Kosovo + Albania.",
-      "image": "/geoshqip.jpg",
+      "name": "Kujom",
+      "description": "**Brief:** I wanted to make a fun Kosovo-only geography guessing game while Street View still feels new.\n\n**What I built:** A game with 10,000 real locations, solo play, shared challenges, live rooms, and scoreboards.\n\n**Result:** Players can explore Kosovo, compete on the same rounds, and compare scores with friends.",
+      "image": "/kujom.png",
       "tags": [
-        "Next.js",
-        "TypeScript",
-        "Maps"
+        "JavaScript",
+        "Google Maps",
+        "Leaflet",
+        "Supabase"
       ],
       "links": [
         {
-          "name": "Website",
-          "href": "https://geoshqip.netlify.app/",
+          "name": "Kujom",
+          "href": "https://www.kujom.live/",
           "icon": "globe"
         },
         {
           "name": "Source",
-          "href": "https://github.com/leotrimhaliti/GeoShqip",
+          "href": "https://github.com/leotrimhaliti/kujom",
           "icon": "github"
         }
       ]
     },
     {
       "name": "Kommits",
-      "description": "Never stare at git commit -m \"\" again.",
+      "description": "**Problem:** Writing clear commit messages can slow developers down during everyday work.\n\n**What I built:** A small tool that turns rough change notes into cleaner commit messages.\n\n**Result:** Developers get a useful message faster and keep their history easier to read.",
       "image": "/kommits.jpg",
       "tags": [
         "Next.js",
@@ -132,7 +131,7 @@
       ],
       "links": [
         {
-          "name": "Website",
+          "name": "Kommits",
           "href": "https://kommits.netlify.app/",
           "icon": "globe"
         },
@@ -145,7 +144,7 @@
     },
     {
       "name": "KodoBashke",
-      "description": "Find project partners and collaborate on projects with them.",
+      "description": "**Problem:** Students with project ideas often struggle to find the right people to build with.\n\n**What I built:** A mobile app for profiles, project posts, and chat between potential collaborators.\n\n**Result:** People can discover projects, connect with others, and start building together.",
       "image": "/KodoBashke.png",
       "tags": [
         "React Native",
@@ -161,8 +160,8 @@
       ]
     },
     {
-      "name": "Barber Booking Website",
-      "description": "Online booking system for a local barbershop with admin dashboard.",
+      "name": "VikiBarber",
+      "description": "**Problem:** A local barbershop needed a simpler way to take appointments online.\n\n**What I built:** A booking website with an admin dashboard for appointments and availability.\n\n**Result:** Customers can book anytime, and the shop can manage its schedule from one place.",
       "image": "/viki.jpg",
       "tags": [
         "React",
@@ -171,14 +170,9 @@
       ],
       "links": [
         {
-          "name": "Website",
+          "name": "VikiBarber",
           "href": "https://vikibarber.netlify.app/",
           "icon": "globe"
-        },
-        {
-          "name": "Source",
-          "href": "https://github.com/leotrimhaliti/barber-reservation",
-          "icon": "github"
         }
       ]
     }

@@ -1,67 +1,59 @@
 {
   "career": [
     {
-      "name": "Prishtina International Airport - Adem Jashari",
-      "href": "https://www.airportpristina.com",
-      "title": "Information Technology Technician",
-      "logo": "/airport-logo.png",
-      "start": "Jul 2026",
-      "employmentType": "Full-time",
-      "location": "Prishtine · On-site",
-      "description": [
-        "Provide technical support to ensure the reliable operation of the airport's IT infrastructure",
-        "Troubleshoot hardware, software, and network issues, and install and configure computer systems",
-        "Maintain IT equipment, support end users, and assist with system maintenance for secure and efficient daily operations"
-      ]
-    },
-    {
       "name": "Dreshaj Elite Cars",
       "href": "https://dreshajelitecars.com",
-      "title": "Freelance Fullstack Developer",
+      "title": "Freelance Full-Stack Developer",
       "logo": "/dreshaj.jpg",
       "start": "Apr 2026",
       "end": "May 2026",
       "description": [
-        "Built a car listing platform for Korean imports",
-        "Next.js frontend, Supabase backend, automated scraper syncing inventory from Encar.com"
-      ],
-      "links": [
-        {
-          "name": "Website",
-          "href": "https://dreshajelitecars.com",
-          "icon": "globe"
-        }
+        "Built a car listing website for a client",
+        "Automated listing updates so inventory stays current",
+        "Delivered the project from setup to launch"
+      ]
+    },
+    {
+      "name": "VikiBarber",
+      "href": "https://vikibarber.netlify.app/",
+      "title": "Freelance Full-Stack Developer",
+      "logo": "/viki.jpg",
+      "start": "Sep 2025",
+      "end": "Feb 2026",
+      "description": [
+        "Built a booking website for a local barbershop",
+        "Added a simple dashboard to manage appointments",
+        "Helped the business accept bookings online"
       ]
     },
     {
       "name": "QKUK (Main University Clinical Center of Kosovo)",
       "href": "https://shskuk.org",
-      "title": "Software Developer (Patient Management System)",
+      "title": "Software Developer - Patient Management System",
       "logo": "/qkuk.png",
       "start": "Jun 2025",
       "end": "Jan 2026",
       "description": [
-        "Developing a Patient Management System for QKUK",
-        "React (Vite), Node.js"
+        "Worked on software for patient management",
+        "Built screens for records and daily workflows",
+        "Supported a healthcare environment with private data"
       ]
-    },
+    }
+  ],
+  "itSupport": [
     {
-      "name": "Barber Booking Website",
-      "href": "https://github.com/leotrimhaliti/barber-booking",
-      "title": "Freelance Fullstack Developer",
-      "logo": "/viki.jpg",
-      "start": "Sep 2025",
-      "end": "Feb 2026",
+      "name": "Prishtina International Airport - Adem Jashari",
+      "href": "https://www.airportpristina.com",
+      "title": "Information Technology Technician",
+      "logo": "/limak.jpg",
+      "start": "Jul 2026",
+      "end": "Aug 2026",
+      "employmentType": "Full-time",
+      "location": "Prishtine - On-site",
       "description": [
-        "Online booking system for a barbershop",
-        "React (Vite), Supabase"
-      ],
-      "links": [
-        {
-          "name": "GitHub Repository",
-          "href": "https://github.com/leotrimhaliti/barber-reservation",
-          "icon": "github"
-        }
+        "Supported airport IT systems and end users",
+        "Resolved hardware, software, and network issues",
+        "Helped keep daily operations running smoothly"
       ]
     }
   ]

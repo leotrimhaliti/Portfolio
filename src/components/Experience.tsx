@@ -5,7 +5,8 @@ import { careerSchema, educationSchema } from "@/lib/schemas";
 import Timeline from "./Timeline";
 
 export default function Experience() {
-  const career = careerSchema.parse(careerData).career;
+  const { career, itSupport } = careerSchema.parse(careerData);
+  const work = [...career, ...itSupport];
   const education = educationSchema.parse(educationData).education;
 
   return (
@@ -15,7 +16,7 @@ export default function Experience() {
         <TabsTrigger value="education">Education</TabsTrigger>
       </TabsList>
       <TabsContent value="work">
-        <Timeline experience={career}></Timeline>
+        <Timeline experience={work}></Timeline>
       </TabsContent>
       <TabsContent value="education">
         <Timeline experience={education}></Timeline>

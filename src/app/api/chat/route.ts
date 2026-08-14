@@ -18,20 +18,22 @@ export async function POST(req: Request) {
         model: "llama-3.1-8b-instant",
         messages: [
             { role: "system", content: systemPrompt },
-            ...messages,
+            ...messages.map(({ role, content }: { role: string; content: string }) => ({
+                role,
+                content,
+            })),
         ],
         stream: true,
     });
 
-    // Create a readable stream from the Groq response
+    // Stream plain text chunks to the client
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
         async start(controller) {
             for await (const chunk of response) {
                 const text = chunk.choices[0]?.delta?.content || "";
                 if (text) {
-                    // Format as data stream protocol for useChat
-                    controller.enqueue(encoder.encode(`0:${JSON.stringify(text)}\n`));
+                    controller.enqueue(encoder.encode(text));
                 }
             }
             controller.close();

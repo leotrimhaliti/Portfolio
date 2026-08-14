@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Message } from "ai";
+import { Message } from "@/hooks/useChat";
 import { Bot } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
