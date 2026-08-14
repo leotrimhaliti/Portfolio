@@ -1,6 +1,18 @@
 {
   "career": [
     {
+      "name": "DevyCore",
+      "href": "https://www.linkedin.com/company/devycore",
+      "title": "Co-Founder",
+      "logo": "/devycore.jpg",
+      "start": "Jan 2024",
+      "description": [
+        "Co-founded a software development company",
+        "Build web apps, backend systems, APIs, and AI-powered tools",
+        "Work with clients from idea to launch"
+      ]
+    },
+    {
       "name": "Dreshaj Elite Cars",
       "href": "https://dreshajelitecars.com",
       "title": "Freelance Full-Stack Developer",
