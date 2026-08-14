@@ -83,7 +83,7 @@ export function ProjectCard({ project }: Props) {
   );
 
   return (
-    <Card className="grid h-full overflow-hidden [grid-template-rows:theme(spacing.48)_1fr_auto] sm:[grid-template-rows:theme(spacing.44)_1fr_auto]">
+    <Card className="grid h-full overflow-hidden [grid-template-rows:theme(spacing.48)_1fr_theme(spacing.40)] sm:[grid-template-rows:theme(spacing.44)_1fr_theme(spacing.40)]">
       <CardHeader className="p-0">
         {image &&
           (imageLink ? (
@@ -115,8 +115,8 @@ export function ProjectCard({ project }: Props) {
           </div>
         )}
       </CardContent>
-      <CardFooter className="flex min-h-32 flex-col items-start justify-between gap-4 border-t bg-muted/20 px-6 py-4">
-        <div className="flex min-h-12 flex-wrap content-start gap-1.5 overflow-hidden">
+      <CardFooter className="flex h-40 flex-col items-start justify-between gap-4 border-t bg-muted/20 px-6 py-4">
+        <div className="flex h-14 flex-wrap content-start gap-1.5 overflow-hidden">
           {tags.map((tag) => (
             <span
               key={tag}
@@ -136,7 +136,7 @@ export function ProjectCard({ project }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={cn(
-                  "inline-flex h-8 items-center justify-center gap-2 rounded-md border border-border bg-background px-3 text-xs font-medium text-foreground shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground",
+                  "inline-flex h-8 items-center justify-center gap-2 whitespace-nowrap rounded-md border border-border bg-background px-3 text-xs font-medium text-foreground shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground",
                   links.length === 1 && "min-w-24",
                 )}
               >
